@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="flex justify-center items-center w-full h-48 bg-slate-600">
+        <div>
+            <h1 class="text-4xl text-white uppercase">Student Registration Form</h1>
+        </div>
+    </header>
+
+    <main class="flex w-full justify-center mt-12">
+        <!-- Form Section -->
+        <section class="flex flex-col justify-center items-center bg-green-500 w-[35%] gap-8 p-6 shadow-lg rounded-lg">
+            <div class="flex flex-col mt-8 w-[60%]">
+                <label for="name" class="text-white">Student Name</label>
+                <input id="name" class="name h-10 p-2 rounded-lg" type="text" placeholder="Enter name">
+            </div>
+
+            <div class="flex flex-col w-[60%]">
+                <label for="id" class="text-white">Student ID</label>
+                <input id="id" class="ID h-10 p-2 rounded-lg" type="text" placeholder="Enter ID">
+            </div>
+
+            <div class="flex flex-col w-[60%]">
+                <label for="email" class="text-white">Email</label>
+                <input id="email" class="email h-10 p-2 rounded-lg" type="email" placeholder="Enter email">
+            </div>
+
+            <div class="flex flex-col w-[60%]">
+                <label for="contact" class="text-white">Contact No</label>
+                <input id="contact" class="contact h-10 p-2 rounded-lg" type="number" placeholder="Enter contact">
+            </div>
+
+            <div class="mb-8">
+                <button class="addButton rounded-lg px-4 py-2 bg-blue-700 text-white hover:bg-blue-600 duration-300">
+                    Add
+                </button>
+            </div>
+        </section>
+
+        <!-- Student List Section -->
+        <section
+            class="registeredArea overflow-y-auto bg-gray-300 w-[50%] flex flex-col items-center p-6 rounded-lg shadow-lg">
+            <table class="w-[80%] studentTable bg-white rounded-lg">
+                <thead class="bg-gray-700 ">
+                    <tr class="headRow">
+                        <th class="p-3">Name</th>
+                        <th class="p-3">ID</th>
+                        <th class="p-3">Email</th>
+                        <th class="p-3">Contact No</th>
+                        <th class="p-3">Edit</th>
+                        <th class="p-3">Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white">
+                    <!-- Dynamically added rows will go here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

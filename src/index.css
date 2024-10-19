@@ -1,0 +1,109 @@
+/* Custom CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+/* Styling the Heading Section */
+header {
+    background-color: #333;
+}
+
+/* Table and Form Styles */
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #ccc;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+/* Form Section */
+.createDiv {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Data Section */
+.dataSection {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Table Styles */
+.headRow {
+    text-align: center;
+    background-color: #f0f4f8;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+
+.addedRow {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    height: 50px;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.addedRow:hover {
+    background-color: #f9f9f9;
+}
+
+/* Buttons */
+.editButton {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(45, 193, 146);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px gray;
+    transition: transform 0.2s;
+}
+
+.editButton:hover {
+    transform: scale(1.1);
+}
+
+.deleteButton {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(182, 30, 30);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px gray;
+    transition: transform 0.2s;
+}
+
+.deleteButton:hover {
+    transform: scale(1.1);
+}
+
+/* Force a fixed height for the registeredArea to show overflow */
+.registeredArea {
+    max-height: auto;
+    /* Adjust as needed */
+    overflow-y: auto;
+    /* Enable vertical scrollbar */
+    scrollbar-width: thin;
+    /* For Firefox */
+}
+
+.registeredArea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.registeredArea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
