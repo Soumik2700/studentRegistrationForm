@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons8-registration-80.png" type="image/png">
     <title>Student Registration Form</title>
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="./src/index.css">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 min-h-screen flex flex-col justify-between">
 
     <header class="flex justify-center items-center w-full h-48 bg-slate-600">
         <div>
@@ -17,7 +18,7 @@
         </div>
     </header>
 
-    <main class="flex w-full justify-center mt-12">
+    <main class="flex w-full justify-center mt-12 flex-grow">
         <!-- Form Section -->
         <section class="flex flex-col justify-center items-center bg-green-500 w-[35%] gap-8 p-6 shadow-lg rounded-lg">
             <div class="flex flex-col mt-8 w-[60%]">
@@ -50,7 +51,7 @@
         <!-- Student List Section -->
         <section
             class="registeredArea overflow-y-auto bg-gray-300 w-[50%] flex flex-col items-center p-6 rounded-lg shadow-lg">
-            <table class="w-[80%] studentTable bg-white rounded-lg">
+            <table class="w-[95%] studentTable bg-white rounded-xl">
                 <thead class="bg-gray-700 ">
                     <tr class="headRow">
                         <th class="p-3">Name</th>
@@ -67,6 +68,10 @@
             </table>
         </section>
     </main>
+
+    <footer class="relative top-full w-full h-14 flex justify-center items-center bg-slate-900 text-white">
+        <h2>&copy; Developed by Soumik Sinha <br> All rights reserved.</h2>
+    </footer>
 
     <script src="script.js"></script>
 </body>

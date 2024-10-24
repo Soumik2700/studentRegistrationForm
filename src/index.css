@@ -4,15 +4,17 @@
     padding: 0;
 }
 
-body {
+/* body {
     padding-bottom: 50px;
-}
+} */
 
 /* Styling the Heading Section */
 header {
     background-color: #333;
 }
-
+main{
+    padding-bottom: 50px;
+}
 /* Table and Form Styles */
 .heading {
     display: flex;
